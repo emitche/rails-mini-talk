@@ -1,0 +1,64 @@
+.minion {
+  float: left;
+  width: 20%;
+}
+
+.ridiculous {
+  float: right;
+  width: 75%;
+}
+
+body {
+  base-font-size: 16px;
+  font-size: 1em;
+}
+
+h1, .reveal h1 {
+  font-size: 175%;
+  text-transform: none;
+}
+
+h2, .reveal h2 {
+  font-size: 150%;
+  text-transform: none;
+}
+
+h3, .reveal h3 {
+  font-size: 125%;
+  text-transform: none;
+}
+
+h4, .reveal h4 {
+  font-size: 115%;
+}
+
+h5, .reveal h5 {
+  font-size: 110%;
+}
+
+h6, .reveal h6 {
+  font-size: 105%;
+}
+
+code, .reveal code {
+  color: green;
+  background: white;
+  /* border: 1px solid green; */
+  font-size: .8em;
+  padding: .05em;
+  line-height: 2em !important;
+  /* margin: 0.5em; */
+}
+
+li,.reveal li {
+  line-height: 2em;
+}
+
+
+body {
+  background: rgb(190,225,190);
+}
+
+.reveal h1 {
+  text-shadow: none;
+}

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Ruby on Rails</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Elizabeth Mitchell">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+
+          <h1>Ruby on Rails</h1>
+          <h2>A Tiny Introduction</h2>
+          <br>
+
+          <h3>Elizabeth Mitchell</h3>
+          <br>
+
+          <p>February 2016</p>
+          <p>Girl Develop It Ann Arbor</p>
+        </section>
+
+        <section>
+          <h1>What is Ruby on Rails?</h1>
+
+          <p>Ruby on Rails is a web development framework that uses <strong>Ruby</strong>, a <strong>Model View Controller pattern (MVC)</strong>, and lots of built in awesomeness to help developers build websites and apps.</p>
+        </section>
+
+        <section>
+          <section>
+            <h1>Ruby Loves Objects</h1>
+
+            <p>Ruby is an object-oriented programming language.</p>
+          </section>
+
+          <section>
+            <h1>Rails Loves Objects</h1>
+
+            <ul>
+              <li>Each bit of data and each collection of <strong>data can be represented by an object</strong>.</li>
+              <li>Each object can have properties and methods.</li>
+              <li>We can interact with these data objects.</li>
+            </ul>
+
+            <p>A <strong>collection of people</strong> is an object.</p>
+            <p>Each <strong>individual person</strong> is an object.</p>
+          </section>
+
+          <section>
+            <h1>Accessing Data Objects</h1>
+
+            <p>Find a person with an id of 1: <code>p1 = Person.find(1)</code></p>
+
+            <p>Find out a person's name: <code>p1.name</code></p>
+
+            <p>Interact with all the people: <code>Person.all</code></p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Rails Allows Quick Access to Data</h1>
+
+            <h2>through the Rails Console</h2>
+          </section>
+
+          <section>
+            <h1>IRB is Awesome</h1>
+
+            <p>In Intro to Ruby, you have likely interacted with IRB (the interactive Ruby shell).</p>
+
+            <p>Rails has a built-in shell called <strong>Rails Console</strong> based off of IRB.</p>
+          </section>
+
+          <section>
+            <h1>Rails Console is Awesome</h1>
+
+            <ul>
+              <li>
+                You can directly interact with data, add records to your database, and edit and delete records.
+              </li>
+              <li>
+                You can add/edit fake data during development.
+              </li>
+              <li>
+                Very helpful tool for a front-end developer.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>How to access Rails Console</h1>
+
+            <ol>
+              <li>
+                Inside a terminal/console, navigate to a folder that is a Rails project.
+                <br>
+                <code>cd my-rails-project</code>
+              </li>
+              <li>
+                Type in your console <code data-trim>rails console</code> or <code data-trim>rails c</code> for short.
+              </li>
+              <li>
+                Interact with data and do cool things.
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Model View Controller (MVC) in Rails</h1>
+          </section>
+
+          <section>
+            <h1>V(iews)</h1>
+
+            <h2>Views</h2>
+
+            <p>layouts/templates that define how to show content. They communicate with the controller, receiving variables and information that are used to display data.</p>
+          </section>
+
+          <section>
+            <h1>C(ontrollers)</h1>
+
+            <h2>Controllers</h2>
+            <p>are the glue between models and views. Hand off data from the model to the view. Take user input from the view and save those changes to the database by communicating with the model.</p>
+
+            <h2>Routes</h2>
+
+            <p>assign URLs to specfic controllers and their actions (methods within each controller). Example: <code>my.app/people</code> pulls up the <code>People</code> controller and the <code>index</code> action.</p>
+          </section>
+
+          <section>
+            <h1>M(odel)</h1>
+
+            <h2>Active Record</h2>
+
+            <p>communicates with the database. Responsible for business logic. Represents data objects as models. In charge of associations between models.</p>
+
+            <h2>Models</h2>
+
+            <p>define the structure of objects (through methods, properties).</p>
+          </section>
+
+          <section>
+
+          <section>
+            <h1>MVC</h1>
+            <h3>Routes communicate with Controllers</h3>
+            <h3>Controllers communicate with Models</h3>
+            <h3>Controllers communicate with Views</h3>
+          </section>
+
+          <section>
+            <h1>Rails Views Are Awesome</h1>
+
+            <ul>
+              <li>Include minimal logic</li>
+              <li>Are resuable in different parts of the application.</li>
+              <li>Are modular. Each piece of page can be chunked out into components</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h1>Rails Is Awesome</h1>
+
+          <ul>
+            <li><a href="http://guides.rubyonrails.org/">Ruby on Rails Guides</a></li>
+            <li><a href="http://railsbridge.org/">RailsBridge</a></li>
+            <li><a href="http://railsforzombies.org/">Rails for Zombies</a></li>
+          </ul>
+        </section>
+    </div>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/beige.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
